@@ -1,0 +1,9 @@
+a=34
+b=3
+print("a+b= ",a+b)
+print("a-b= ",a-b)
+print("a*b= ",a*b)
+print("a/b= ",a/b)
+print("a%b= ",a%b)
+print("a//b= ",a//b) #Will only give the whole number part of the result
+print("a**b= ",a**b) #Power of the number
