@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center><h2> Employee Details </h2></center>
+	<table align="center" border="2" cellpadding="4">
+		<thead>
+			<th>Emp_Name</th>
+			<th>Emp_Designation</th>
+			<th>Emp_Salary</th>
+			<th>Emp_ID</th>
+			<th>Change</th>
+		</thead>
+		{% for row in data %}
+		<tr>
+			{% for i in row %}
+			<td> {{i}} </td>
+			{% endfor %}
+			<td>
+				<a href="/showUpdate?id={{row.3}}"> Update </a>
+				<a href="/deleteData?id={{row.3}}"> Delete </a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

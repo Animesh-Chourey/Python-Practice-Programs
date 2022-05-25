@@ -1,0 +1,19 @@
+
+<center>
+	{{today}}
+</center>
+
+<h1>a= {{a}}</h1>
+<h1>b= {{b}}</h1>
+
+{% if a == b %}
+<h2> a and b are equal </h2>
+{% else %}
+<h2> a and b are not equal </h2>
+{% endif %}
+
+{% ifequal a b %}
+<h2>a and b are equal</h2>
+{% else %}
+<h2>Not equal</h2>
+{% endifequal %}

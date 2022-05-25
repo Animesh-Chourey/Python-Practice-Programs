@@ -1,0 +1,10 @@
+{{data}}
+
+{% for k,v in data.items %}
+	<h1> {{k}}....{{v}} </h1>
+	{% if k == 1 %}
+		{% for i in v %}
+			<h2> {{i}} </h2>
+		{% endfor %}
+	{% endif %}
+{% endfor %}
